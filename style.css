@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+
+.container {
+    width: 100vw; 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+                    /* weather */
+.weather-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgb(0 0 0 / 40%);
+}
+
+                    /* watch */
+.container-MainText {
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+}
+                    /* greteeng */
+.container-MainText {
+    padding: 25px;
+    border-radius: 15px;
+    background-color: rgb(0 0 0 / 40%);
+}
+
+.greetings_form input {
+    padding: 10px 50px;
+    background: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.greetings_form input::placeholder {
+    color: white;
+    font-size: 20px;
+}
+
+.greetings_form, .greetings {
+    display: none;
+}
+
+.showing {
+    display: block;
+    padding-top: 20px;
+}
+
+
+                    /* to do list */
+.todo-container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 20px;
+    text-align: right;
+}
+
+.todo-container_object {
+    display: none;
+}
+
+.todo-button {
+    background: none;
+    color: white;
+    font-size: 15px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    background-color: rgb(0 0 0 / 40%);
+    margin-top: 5px;
+    cursor: pointer;
+
+    animation: ease 1s;
+}
+
+.todo-button:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+}
+
+.todo-container_object { 
+    background-color: rgb(0 0 0 / 40%);
+    color: white;
+    list-style-type: none;
+    text-align: justify;
+}
+
+.todo-container_object ul {
+    list-style-type: none;
+}
+
+.todo-container_object input {
+    border-radius: 15px;
+    background: none;
+    padding: 15px 20px;
+    color:white;
+}
+
+.todo-container_object input::placeholder {
+    color:rgba(255, 255, 255, 0.4);
+}
+
+.todo-container_object.active {
+    display: block;
+}
+
+/* background img */
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.bgImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+
+    animation: fadein 0.5s linear;
+}

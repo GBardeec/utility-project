@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    
+    <title>Project</title>
+</head>
+<body>
+    <div class="container">
+        <!-- weather start -->   
+        <div class="weather-container">
+            <i class="fa-solid fa-temperature-three-quarters" style="color: #ffffff;"></i>
+            <span class="js-weather"></span>
+        </div>
+        <div class="container-MainText">
+            <!-- watch start -->    
+            <div class="watch-container">
+                <h1 class="watch-container__text">00:00</h1>
+            </div>
+            <!-- greteeng start -->
+            <div class="greetings-container">
+                <form class="greetings-container__form greetings_form">
+                    <input type="text" placeholder="Как Вас зовут?">
+                </form>
+                <h2 class="greetings-container__text greeting"></h2>
+            </div>
+        </div>
+        <!-- To Do list start-->    
+        <div class="todo-container">
+            <div class="todo-container_object">
+                <ul class="js-toDoList"></ul>
+                <form class="js-toDoForm toDo_form">
+                    <input type="text" placeholder="Введите задачу">
+                </form>
+             </div>
+            <button class="todo-button">To Do</button>
+        </div>
+    </div>
+<script src="weather.js"></script>
+<script src="time.js"></script>
+<script src="greeting.js"></script>
+<script src="toDoList.js"></script>
+<script src="images-bg.js"></script>
+<script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+</body>
+</html>
